@@ -114,7 +114,7 @@ function install_composer_deps() {
     {
         cd "$target"
         php "vendor/composer/bin/composer.phar" install \
-            --prefer-dist \
+            --prefer-source \
             --optimize-autoloader \
             --no-interaction \
             --no-dev
